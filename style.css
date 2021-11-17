@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 15px;
+  width: 100%;
+}
+
+:root {
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 420px;
+  padding-top: 3rem;
+  background: var(--transparent-white);
+}
+.hero {
+  width: 100%;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+.card {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  height: 400px;
+  padding: 3rem;
+}
+
+.card-sudan {
+  background: var(--bright-orange);
+}
+
+.card-suv {
+  background: var(--dark-cyan);
+}
+
+.card-luxury {
+  background: var(--very-dark-cyan);
+}
+
+.card-sudan button {
+  color: var(--bright-orange);
+}
+
+.card-suv button {
+  color: var(--dark-cyan);
+}
+
+.card-luxury button {
+  color: var(--very-dark-cyan);
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--very-light-gray);
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+button {
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  background: var(--very-light-gray);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+button:hover {
+  border: 2px solid white;
+  background: transparent;
+  color: #fff;
+}
+
+.attribution {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--bright-orange);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 100%, 50%);
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 1440px;
+  }
+  .container {
+    width: 70%;
+    max-width: 900px;
+  }
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+  }
+  .card-sudan {
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+  }
+  .card-luxury {
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+  }
+}
