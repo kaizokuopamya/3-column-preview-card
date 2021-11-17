@@ -26,17 +26,18 @@ body {
   padding-top: 3rem;
   background: var(--transparent-white);
 }
+
 .hero {
   width: 100%;
   border-radius: 0.6rem;
   overflow: hidden;
 }
+
 .card {
   width: 100%;
-  height: auto;
   margin: 0 auto;
   height: 400px;
-  padding: 3rem;
+  padding: 1.8rem;
 }
 
 .card-sudan {
@@ -74,7 +75,7 @@ p {
   font-family: "Lexend Deca", sans-serif;
   color: var(--transparent-white);
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 button {
@@ -113,17 +114,18 @@ button:hover {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   body {
     margin-top: 3rem;
     width: 100%;
     max-width: 1440px;
   }
   .container {
-    width: 70%;
-    max-width: 900px;
+    width: 80%;
+    max-width: 800px;
   }
   .hero {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
